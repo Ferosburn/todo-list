@@ -108,7 +108,6 @@ input:focus {
 .item-value input, .item-value div {
   flex-grow: 1;
   word-break: break-word;
-  height: 25px;
 }
 
 .item-value button {
