@@ -1,18 +1,135 @@
-.item button {
-  height: 30px;
-  width: 30px;
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Open+Sans:wght@400;500&display=swap');
+
+:root {
+  --dark-blue: #06283D;
+  --blue: #1363DF;
+  --light-blue: #47B5FF;
+  --pale-blue: #DFF6FF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  font-family: 'Open Sans', sans-serif;
+  padding: 30px;
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 80%;
+  max-width: 600px;
+  min-height: 80vh;
+  background-color: var(--pale-blue);
+  border-radius: 10px;
+  border: 1px solid var(--dark-blue);
+  box-shadow: 5px 5px 20px #06283D44;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: 'Fascinate', cursive;
+  margin: 0;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--light-blue);
+  border: 2px solid #1363DF44;
+  border-radius: 3px;
+  font-weight: 500;
+  box-shadow: 2px 2px 10px #1363DF88;
+}
+
+input {
+  font-family: 'Open Sans', sans-serif;
+  background-color: transparent;
+  border: 1px solid #06283D66;
+  outline: none;
+  border-radius: 3px;
+  font-weight: 500;
+  box-shadow: 2px 2px 10px #1363DF88;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #1363DF;
+  border: 1px solid #06283D66;
+}
+
+.input-item {
+  display: flex;
+  margin-top: 30px;
+}
+
+.input-item input {
+  padding: 10px;
+  flex-grow: 1;
+  height: 50px;
+}
+.input-item button {
+  flex-basis: 100px;
+  height: 50px;
+}
+
+.list-container {
+  margin-top: 20px;
+  color: var(--dark-blue);
+  height: 100%;
+  min-height: 50vh;
+}
+
+.item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  height: 25px;
+  min-width: 25px;
+}
+
+.check-btn {
+  margin-right: 10px;
+}
+
+.item-value-container {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.item-value {
+  display: flex;
+  align-items: center;
+}
+
+.item-value input, .item-value div {
+  flex-grow: 1;
+  word-break: break-word;
+  height: 25px;
+}
+
+.item-value button {
+  flex-basis: 50px;
+  height: 25px;
+}
+
+/* addition */
+
+.checked {
+  text-align: center;
+  padding: 0;
+  background-color: greenyellow;
 }
 
 .finished {
+  opacity: 0.5;
   text-decoration: line-through;
 }
 
 .hidden {
   display: none;
   visibility: hidden;
-}
-
-.check-icon {
-  color: green;
-  background-color: greenyellow;
 }

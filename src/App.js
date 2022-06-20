@@ -12,11 +12,11 @@ function App() {
     event.preventDefault();
     setItems([...items, todoItem]);
     setTodoItem('');
-    console.log(items)
   }
   return (
-    <div>
-      <form onSubmit={event=>handleSubmit(event)}>
+    <div className="main">
+      <h1>To-do-List</h1>
+      <form className="input-item" onSubmit={event=>handleSubmit(event)}>
         <input value={todoItem} onChange={event=>handleChange(event)}/>
         <button type="submit">Tambah</button>
       </form>
