@@ -11,3 +11,8 @@
   display: none;
   visibility: hidden;
 }
+
+.check-icon {
+  color: green;
+  background-color: greenyellow;
+}
